@@ -49,6 +49,7 @@ html {
 
 .accordion-line:hover .caption__icon {
   background-image: url(img/icon_close.png);
+  transform: rotate(0);
   transition: 0.2s all linear;
 }
 
@@ -81,6 +82,7 @@ html {
 
 .is-active1:checked ~ .line1 .line__caption .caption__icon {
   background-image: url(img/icon_close.png);
+  transform: rotate(0);
 }
 
 .is-active1:checked ~ .line1 .line__caption .caption__text {
@@ -94,6 +96,7 @@ html {
 
 .is-active2:checked ~ .line2 .caption__icon{
   background-image: url(img/icon_close.png);
+  transform: rotate(0);
 }
 
 .is-active2:checked ~ .line2 .line__caption .caption__text {
@@ -107,6 +110,7 @@ html {
 
 .is-active3:checked ~ .line3 .line__caption .caption__icon {
   background-image: url(img/icon_close.png);
+  transform: rotate(0);
 }
 
 .is-active3:checked ~ .line3 .line__caption .caption__text {
@@ -120,6 +124,7 @@ html {
 
 .is-active4:checked ~ .line4 .caption__icon{
   background-image: url(img/icon_close.png);
+  transform: rotate(0);
 }
 
 .is-active4:checked ~ .line4 .line__caption .caption__text {
@@ -133,6 +138,7 @@ html {
 
 .is-active5:checked ~ .line5 .caption__icon{
   background-image: url(img/icon_close.png);
+  transform: rotate(0);
 }
 
 .is-active5:checked ~ .line5 .line__caption .caption__text {
@@ -157,7 +163,8 @@ html {
 .caption__icon {
   width: 1vw;
   height: 1vw;
-  background-image: url(img/icon_plus.png);
+  background-image: url(img/icon_close.png);
+  transform: rotate(45deg);
   background-size: cover;
   display: none;
 }
