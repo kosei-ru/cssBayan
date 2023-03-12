@@ -30,6 +30,7 @@ html {
 .accordion:hover .caption__text {
   color: black;
 }
+
 .accordion__caption {
   font-size: 3rem;
   padding: 0.5vw 1vw;
@@ -48,7 +49,23 @@ html {
 
 .accordion-line:hover .caption__icon {
   background-image: url(img/icon_close.png);
+  transition: 0.2s all linear;
 }
+
+.accordion-line:active .caption__text {
+  color: blue;  
+}
+
+.accordion-line:active .caption__icon {
+  background-image: url(img/icon_close_blue.png);
+  transition: 0.2s all linear;
+}
+
+/* .accordion-line:active .line__img { 
+  width: 20vw;
+  height: 20vw;
+  transition: 0.2s all linear;
+} */
 
 .line-label {
   display: flex;
@@ -66,6 +83,10 @@ html {
   background-image: url(img/icon_close.png);
 }
 
+.is-active1:checked ~ .line1 .line__caption .caption__text {
+  color: black;  
+}
+
 .is-active2:checked ~ .line2 .line__img{
   width: 20vw;
   height: 20vw
@@ -73,6 +94,10 @@ html {
 
 .is-active2:checked ~ .line2 .caption__icon{
   background-image: url(img/icon_close.png);
+}
+
+.is-active2:checked ~ .line2 .line__caption .caption__text {
+  color: black;  
 }
 
 .is-active3:checked ~ .line3 .line__img{
@@ -84,6 +109,10 @@ html {
   background-image: url(img/icon_close.png);
 }
 
+.is-active3:checked ~ .line3 .line__caption .caption__text {
+  color: black;  
+}
+
 .is-active4:checked ~ .line4 .line__img{
   width: 20vw;
   height: 20vw
@@ -93,6 +122,10 @@ html {
   background-image: url(img/icon_close.png);
 }
 
+.is-active4:checked ~ .line4 .line__caption .caption__text {
+  color: black;  
+}
+
 .is-active5:checked ~ .line5 .line__img{
   width: 20vw;
   height: 20vw
@@ -100,6 +133,10 @@ html {
 
 .is-active5:checked ~ .line5 .caption__icon{
   background-image: url(img/icon_close.png);
+}
+
+.is-active5:checked ~ .line5 .line__caption .caption__text {
+  color: black;  
 }
 
 .line__caption {
