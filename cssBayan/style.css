@@ -62,12 +62,6 @@ html {
   transition: 0.2s all linear;
 }
 
-/* .accordion-line:active .line__img { 
-  width: 20vw;
-  height: 20vw;
-  transition: 0.2s all linear;
-} */
-
 .line-label {
   display: flex;
   flex: 0 1 auto;
@@ -151,7 +145,6 @@ html {
   flex: 0 1 auto;
   flex-direction: row;
   justify-content: space-between;
-  /* height: 1vw; */
 }
 
 .caption__text {
